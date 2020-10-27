@@ -39,12 +39,12 @@ pool =
   end
 
 # Load support files
-Code.require_file "../../deps/ecto/integration_test/support/repo.exs", __DIR__
-Code.require_file "../../deps/ecto/integration_test/support/schemas.exs", __DIR__
-Code.require_file "../../deps/ecto/integration_test/support/migration.exs", __DIR__
-
-Code.require_file "../../test/support/schemas.exs", __DIR__
-Code.require_file "../../test/support/migration.exs", __DIR__
+#Code.require_file "../../deps/ecto/integration_test/support/repo.exs", __DIR__
+#Code.require_file "../../deps/ecto/integration_test/support/schemas.exs", __DIR__
+#Code.require_file "../../deps/ecto/integration_test/support/migration.exs", __DIR__
+#
+#Code.require_file "../../test/support/schemas.exs", __DIR__
+#Code.require_file "../../test/support/migration.exs", __DIR__
 
 # Pool repo for async, safe tests
 alias Ecto.Integration.TestRepo

@@ -33,8 +33,9 @@ defmodule Sqlite.Ecto3 do
   for more options such as shared memory caches.
   """
 
-  # Inherit all behaviour from Ecto.Adapters.SQL
-  use Ecto.Adapters.SQL, :sqlitex
+  def start_link(opts) do
+    DBConnection.start_link(Sqlite.Ecto3.Connection, opts)
+  end
 
   import String, only: [to_integer: 1]
 

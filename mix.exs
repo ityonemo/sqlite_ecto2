@@ -58,8 +58,9 @@ defmodule Sqlite.Ecto2.Mixfile do
       links: %{"Github" => "https://github.com/Elixir-Sqlite/sqlite_ecto2"}]
   end
 
-  defp elixirc_paths(:test), do: ["lib", "test/sqlite_db_connection/support"]
+  # TODO: reinstate the db connection tests later
+  defp elixirc_paths(:test), do: ["lib"] #, "test/sqlite_db_connection/support"]
   defp elixirc_paths(_), do: ["lib"]
 
-  defp test_paths, do: ["integration/sqlite", "test"]
+  defp test_paths, do: ["test"] #["integration/sqlite", "test"]
 end
