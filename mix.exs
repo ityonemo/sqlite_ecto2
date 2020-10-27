@@ -39,12 +39,13 @@ defmodule Sqlite.Ecto2.Mixfile do
     [{:connection, "~> 1.0"},
      {:db_connection, "~> 2.3.0"},
      {:decimal, "~> 1.6"},
-     {:ecto, "~> 3.5"},
      {:jason, "~> 1.2"},
-     {:postgrex, "~> 0.15", optional: true},
+     #{:postgrex, "~> 0.15", optional: true},
      {:sbroker, "~> 1.0"},
      {:sqlitex, "~> 1.7"},
      # DEV AND TEST DEPENEDENCIES
+     {:ecto, "~> 3.5", only: :test},
+     {:ecto_sql, "~> 3.5", only: :test},
      {:credo, "~> 1.4", only: [:dev, :test]},
      {:excoveralls, "~> 0.13", only: :test},
      {:ex_doc, "~> 0.23", runtime: false, only: :docs}]

@@ -1,6 +1,6 @@
-defmodule Sqlite.Ecto2 do
+defmodule Sqlite.Ecto3 do
   @moduledoc ~S"""
-  Ecto Adapter module for SQLite.
+  Ecto 3 Adapter module for SQLite.
 
   It uses Sqlitex and Esqlite for accessing the SQLite database.
 
