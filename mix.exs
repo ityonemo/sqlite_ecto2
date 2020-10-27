@@ -37,16 +37,17 @@ defmodule Sqlite.Ecto2.Mixfile do
   # Dependencies
   defp deps do
     [{:connection, "~> 1.0"},
-     {:credo, "~> 0.10", only: [:dev, :test]},
-     {:db_connection, "~> 1.1"},
-     {:decimal, "~> 1.5"},
-     {:excoveralls, "~> 0.9", only: :test},
-     {:ex_doc, "~> 0.20", runtime: false, only: :docs},
-     {:ecto, "2.2.11"},
-     {:poison, "~> 2.2 or ~> 3.0", optional: true},
-     {:postgrex, "~> 0.13", optional: true},
+     {:db_connection, "~> 2.3.0"},
+     {:decimal, "~> 1.6"},
+     {:ecto, "~> 3.5"},
+     {:jason, "~> 1.2"},
+     {:postgrex, "~> 0.15", optional: true},
      {:sbroker, "~> 1.0"},
-     {:sqlitex, "~> 1.6"}]
+     {:sqlitex, "~> 1.7"},
+     # DEV AND TEST DEPENEDENCIES
+     {:credo, "~> 1.4", only: [:dev, :test]},
+     {:excoveralls, "~> 0.13", only: :test},
+     {:ex_doc, "~> 0.23", runtime: false, only: :docs}]
   end
 
   defp description, do: "SQLite3 adapter for Ecto2"
